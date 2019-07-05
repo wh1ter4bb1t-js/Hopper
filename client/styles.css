@@ -1,0 +1,110 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5px auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+.title {
+  text-align: center;
+}
+
+.error-message {
+  background:#ff9b9b;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.hop-form {
+  width: 70%;
+  margin: 0 auto 4em auto;
+
+}
+
+.loading {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.button-primary {
+  float: right;
+}
+
+.loading {
+  text-align: center;
+}
+
+.hops {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.hops > div {
+  background: hsl(0, 0%,95%);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.hops > div > h3 {
+  word-wrap: break-word;
+}
+
+.hops > div > p {
+  word-wrap: break-word;
+}
+
+.hops > div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  margin-top: 4em;
+}

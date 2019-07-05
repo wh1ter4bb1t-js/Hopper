@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hopper</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">Hopper - Twitter for Rabbits</h1>
+  </header>
+  <main>
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+      <form action="/action_page.php" class="modal-content animate">
+        <div class="imgcontainer">
+          <img src="img_avatart2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember">Remember me
+          </label>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+
+    <form class="hop-form">
+      <div class="error-message"></div>
+      <label for="name">Name</label>
+      <input class="u-full-width" type="text" id="name" name="name">
+      <label for="content">Hop</label>
+      <textarea class="u-full-width" type="text" id="content" name="content"></textarea>
+      <button class="button-primary">Send Your Hop</button>
+    </form>
+    <div class="hops"></div>
+    <div class="button-container">
+      <p id="loadMore">Loading...</p>
+    </div>
+    <div class="loading">
+      <img src="https://media.giphy.com/media/xT9DPldJHzZKtOnEn6/source.gif" alt="Loading image">
+    </div>
+  </main>
+  <script src="client.js"></script>
+</body>
+</html>
